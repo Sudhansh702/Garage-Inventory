@@ -1,0 +1,176 @@
+[
+    {
+        "imageUrl": "assets/images/g1.webp",
+        "name": "Sahil the workshop at",
+        "distance_km": 2.5,
+        "address": "adsf"
+    },
+    {
+        "imageUrl": "assets/images/g2.webp",
+        "name": "second",
+        "distance_km": 2.5,
+        "address": "adsf"
+    },
+    {
+        "imageUrl": "assets/images/g3.webp",
+        "name": "three",
+        "distance_km": 2.5,
+        "address": "adsf"
+    },
+    {
+        "imageUrl": "assets/images/g4.webp",
+        "name": "four",
+        "distance_km": 2.5,
+        "address": "adsf"
+    },
+    {
+        "imageUrl": "assets/images/g5.webp",
+        "name": "five",
+        "distance_km": 2.5,
+        "address": "adsf"
+    },
+    {
+        "name": "ABC Garage",
+        "address": "123 Main Street",
+        "distance_km": 2.5,
+        "imageUrl": "assets/images/g6.jpeg"
+    },
+    {
+        "name": "XYZ Auto Repair",
+        "address": "456 Elm Street",
+        "distance_km": 4.3,
+        "imageUrl": "assets/images/g7.jpeg"
+    },
+    {
+        "name": "Quick Fix Garage",
+        "address": "789 Oak Street",
+        "distance_km": 1.8,
+        "imageUrl": "assets/images/g8.jpeg"
+    },
+    {
+        "name": "Speedy Service Center",
+        "address": "101 Maple Avenue",
+        "distance_km": 3.1,
+        "imageUrl": "assets/images/g9.jpeg"
+    },
+    {
+        "name": "First Class Auto Shop",
+        "address": "222 Pine Road",
+        "distance_km": 5.7,
+        "imageUrl": "assets/images/g10.jpeg"
+    },
+    {
+        "name": "A1 Garage Solutions",
+        "address": "333 Cedar Lane",
+        "distance_km": 6.2,
+        "imageUrl": "assets/images/g11.jpeg"
+    },
+    {
+        "name": "Top Gear Motors",
+        "address": "444 Birch Street",
+        "distance_km": 2.9,
+        "imageUrl": "assets/images/g12.jpeg"
+    },
+    {
+        "name": "Master Mechanics",
+        "address": "555 Walnut Avenue",
+        "distance_km": 3.5,
+        "imageUrl": "assets/images/g13.jpeg"
+    },
+    {
+        "name": "Speedy Auto Care",
+        "address": "666 Cherry Lane",
+        "distance_km": 4.8,
+        "imageUrl": "assets/images/g14.jpeg"
+    },
+    {
+        "name": "City Auto Works",
+        "address": "777 Sycamore Drive",
+        "distance_km": 7.2,
+        "imageUrl": "assets/images/g15.jpeg"
+    },
+    {
+        "name": "All-Pro Garage",
+        "address": "888 Poplar Street",
+        "distance_km": 8.5,
+        "imageUrl": "assets/images/g16.jpeg"
+    },
+    {
+        "name": "Easy Auto Service",
+        "address": "999 Birchwood Avenue",
+        "distance_km": 5.4,
+        "imageUrl": "assets/images/g17.jpeg"
+    },
+    {
+        "name": "Rapid Repair Center",
+        "address": "111 Oakwood Lane",
+        "distance_km": 2.1,
+        "imageUrl": "assets/images/g18.jpeg"
+    },
+    {
+        "name": "Express Auto Care",
+        "address": "222 Elmwood Avenue",
+        "distance_km": 4.9,
+        "imageUrl": "assets/images/g19.jpeg"
+    },
+    {
+        "name": "Sunset Garage",
+        "address": "333 Maple Street",
+        "distance_km": 6.7,
+        "imageUrl": "assets/images/g20.jpeg"
+    },
+    {
+        "name": "Golden Gear Garage",
+        "address": "444 Pine Road",
+        "distance_km": 3.8,
+        "imageUrl": "assets/images/g21.jpeg"
+    },
+    {
+        "name": "Best Choice Auto Repair",
+        "address": "555 Cedar Lane",
+        "distance_km": 5.1,
+        "imageUrl": "assets/images/g22.jpeg"
+    },
+    {
+        "name": "A+ Automotive",
+        "address": "666 Walnut Avenue",
+        "distance_km": 7.6,
+        "imageUrl": "assets/images/g23.jpeg"
+    },
+    {
+        "name": "A+ Automotive",
+        "address": "666 Walnut Avenue",
+        "distance_km": 7.6,
+        "imageUrl": "assets/images/g24.jpeg"
+    },
+    {
+        "name": "A+ Automotive",
+        "address": "666 Walnut Avenue",
+        "distance_km": 7.6,
+        "imageUrl": "assets/images/g25.jpeg"
+    },
+    {
+        "name": "Swift Service Station",
+        "address": "777 Birch Street",
+        "distance_km": 8.3,
+        "imageUrl": "assets/images/g26.jpeg"
+    },
+    {
+        "name": "High-Speed Auto Shop",
+        "address": "888 Sycamore Drive",
+        "distance_km": 9.8,
+        "imageUrl": "assets/images/g27.jpeg"
+    },
+    {
+        "name": "Ace Auto Repairs",
+        "address": "999 Poplar Street",
+        "distance_km": 6.9,
+        "imageUrl": "assets/images/g28.jpeg"
+    },
+    {
+        "name": "Pro Mechanics",
+        "address": "111 Cherry Lane",
+        "distance_km": 5.2,
+        "imageUrl": "assets/images/g29.jpeg"
+    }
+]

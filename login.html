@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Garage Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./node_modules/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="h-screen ">
+    <header>
+        <nav class="navbar bg-gray-800 py-4">
+            <div class="cont">
+                <div class="cont1">
+                    <img src="assets/svg/hamburger.svg" alt="" class="hamburger">
+                    <img class="logo" src="assets/images/logo.png" alt="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-gray-300" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-gray-300" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-gray-300" href="contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-gray-300" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search" style="flex-direction: column;">
+                    <input class="searchInput" type="text" id="s" name="s" placeholder="Search">
+                    <button class="searchBtn" type="button">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex flex-col justify-center items-center h-screen">
+        <section class="login max-w-md mx-auto p-4 bg-gray-800 rounded-md shadow-md">
+            <h2 class="text-3xl font-bold text-gray-300 mb-4">Login</h2>
+            <form class="flex flex-col space-y-4">
+                <label class="text-gray-400" for="email">Email</label>
+                <input class="bg-gray-700 text-gray-300 p-2 rounded-md" type="email" id="email" name="email" placeholder="Your Email">
+                <label class="text-gray-400" for="password">Password</label>
+                <input class="bg-gray-700 text-gray-300 p-2 rounded-md" type="password" id="password" name="password" placeholder="Your Password">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <input class="mr-2" type="checkbox" id="remember-me">
+                        <label class="text-gray-400" for="remember-me">Remember me</label>
+                    </div>
+                    <a class="text-gray-400" href="#">Forgot password?</a>
+                </div>
+                <button class="bg-gray-700 text-gray-300 p-2 rounded-md hover:bg-gray-600" type="submit">Login</button>
+            </form>
+            <p class="text-gray-400 mt-4">Don't have an account? <a class="text-gray-300 cursor-pointer" id="register">Register now</a></p>
+
+            
+        </section>
+        <section class="register  hidden max-w-md mx-auto p-4 bg-gray-800 rounded-md shadow-md">
+            <h2 class="text-3xl font-bold text-gray-300 mb-4">Register</h2>
+            <form class="flex flex-col space-y-4">
+                <label class="text-gray-400" for="fullname">Full Name</label>
+                <input class="bg-gray-700 text-gray-300 p-2 rounded-md" type="text" id="fullname" name="fullname" placeholder="Your Full Name">
+                <label class="text-gray-400" for="email">Email</label>
+                <input class="bg-gray-700 text-gray-300 p-2 rounded-md" type="email" id="email" name="email" placeholder="Your Email">
+                <label class="text-gray-400" for="password">Password</label>
+                <input class="bg-gray-700 text-gray-300 p-2 rounded-md" type="password" id="password" name="password" placeholder="Your Password">
+                <label class="text-gray-400" for="confirm-password">Confirm Password</label>
+                <input class="bg-gray-700 text-gray-300 p-2 rounded-md" type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Your Password">
+                <button class="bg-gray-700 text-gray-300 p-2 rounded-md hover:bg-gray-600" type="submit">Register</button>
+            </form>
+            <p class="text-gray-400 mt-4">Already have an account? <a class="text-gray-300 cursor-pointer" id="login">Login now</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center text-gray-400 mt-16">Copyright © 2023 Garage Finder. All rights reserved.</p>
+   </footer>
+   <script>
+        document.querySelector('#register').addEventListener('click',()=>{
+            document.querySelector('.login').classList.add('hidden');
+            document.querySelector('.register').classList.remove('hidden');
+        })
+        document.querySelector('#login').addEventListener('click',()=>{
+            document.querySelector('.login').classList.remove('hidden');
+            document.querySelector('.register').classList.add('hidden');
+        })
+   </script>
+</body>
+</html>

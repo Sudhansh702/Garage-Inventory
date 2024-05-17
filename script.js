@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addCard({ imageUrl, name, address, distance_km }) {
         return `
-        <div class="card h-r">
+        <div class="card h-r ">
             <img src="${imageUrl}" alt="">
             <div class="card-cont">
                 <div class="name">${name}</div>
@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     function searchCard({ imageUrl, name, address, distance_km }) {
         return `
-            <div class="search-card h-r">
-                <img src="${imageUrl}" alt="">
+        <div class="search-card h-r ">
+                    <img class=" rounded" src="${imageUrl}" alt="">
                 <div class="search-card-cont">
                     <div class="name">${name}</div>
                     <div class="address">${address}</div>

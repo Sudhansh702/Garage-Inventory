@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./node_modules/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/cjs/react-dom.production.min.js"
+        integrity="sha512-WVZtJl1OPNKRz6zERLc+DlAOkISeDWnME9JDQpAVGDjDnMOGku/uF36goW69Yca+Fh7/bKEcmmmCaLVeTeudcg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar ">
+            <div class="cont">
+                <div class="cont1">
+                    <img src="assets/svg/hamburger.svg" alt="" class="hamburger">
+                    <img class="logo" src="assets/images/logo.png" alt="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-gray-300" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="search" style="flex-direction: column;">
+                    <input class="searchInput" type="text" id="s" name="s" placeholder="Search">
+                    <button class="searchBtn" type="button">Search</button>
+                </div> -->
+            </div>
+        </nav>
+    </header>
+    <div class="ham flex-col">
+        <ul class="p-2  border-b border-opacity-50">
+            <li class="flex gap-2 p-2 hover:bg-zinc-800 rounded-2xl"><img class="h-5" src="assets/icons/home.svg"
+                    alt=""><a href="index.html">Home</a>
+            </li>
+        </ul>
+
+        <ul class="filter p-4 border-b border-opacity-50 space-y-2">
+            <div class="text-xl">Filters</div> 
+            <li class="flex gap-2 p-1 hover:bg-zinc-800 rounded-2xl">
+                <input type="checkbox" name="coffe" id="coffe" class="mr-2">
+                <label for="coffe">Coffee Shops</label>
+            </li>
+            <li class="flex gap-2 p-1 hover:bg-zinc-800 rounded-2xl">
+                <input type="checkbox" name="hospitals" id="hospitals" class="mr-2">
+                <label for="hospitals">Hospitals</label>
+            </li>
+            <li class="flex gap-2 p-1 hover:bg-zinc-800 rounded-2xl">
+                <input type="checkbox" name="restaurants" id="restaurants" class="mr-2">
+                <label for="restaurants">Restaurants</label>
+            </li>
+        </ul>
+        <ul class="fixed bottom-0 p-3 border-t ">
+            <li class="flex gap-2 p-1 hover:bg-zinc-800 rounded-2xl">
+                <img class="h-5" src="assets/icons/about.svg" alt="">
+                <a href="about.html">About</a> 
+            </li>
+            <li class="flex gap-2 p-1 hover:bg-zinc-800 rounded-2xl">
+                <img class="h-5" src="assets/icons/contact.png" alt="">
+                <a href="contactus.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <main class="flex flex-col justify-center items-center h-screen">
+        <section class="max-w-md mx-auto p-4  rounded-md shadow-md" style="background-color: rgba(124, 124, 124, 0.288); backdrop-filter: blur(10px);">
+            <h2 class="text-3xl font-bold text-white mb-4">Our Story</h2>
+            <p class="text-white mb-4">Garage Finder was founded on the idea that parking should be easy and stress-free. Our team of passionate individuals came together to create a platform that would make it simple for drivers to find and reserve parking spaces.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center mb-4">
+                <img src="assets/images/logo.png" alt="About Us" class="h-48 w-48 rounded-full mr-4">
+                <div class="text-white">
+                    <p>Our mission is to provide a seamless parking experience for drivers everywhere. We believe that parking should be easy, convenient, and affordable.</p>
+                    <p>We're constantly working to improve our platform and add new features that will make it even easier for users to find and reserve parking spaces.</p>
+                </div>
+            </div>
+            <!-- <h3 class="text-2xl font-bold text-gray-900 mb-4">Meet Our Team</h3> -->
+            <!-- <ul class="flex flex-col md:flex-row justify-center items-center space-x-4">
+                <li class="flex items-center">
+                    <img src="assets/images/team-member-1.jpg" alt="Team Member 1" class="h-12 w-12 rounded-full mr-2">
+                    <div class="text-white">
+                        <div class="font-bold">John Doe</div>
+                        <div>CEO & Founder</div>
+                    </div>
+                </li>
+                <li class="flex items-center">
+                    <img src="assets/images/team-member-2.jpg" alt="Team Member 2" class="h-12 w-12 rounded-full mr-2">
+                    <div class="text-white">
+                        <div class="font-bold">Jane Smith</div>
+                        <div>CTO & Co-Founder</div>
+                    </div>
+                </li>
+                <li class="flex items-center">
+                    <img src="assets/images/team-member-3.jpg" alt="Team Member 3" class="h-12 w-12 rounded-full mr-2">
+                    <div class="text-white">
+                        <div class="font-bold">Bob Johnson</div>
+                        <div>Lead Developer</div>
+                    </div>
+                </li>
+            </ul> -->
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center text-gray-900 mt-16">Copyright © 2023 Garage Finder. All rights reserved.</p>
+   </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

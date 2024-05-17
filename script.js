@@ -3,15 +3,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addCard({ imageUrl, name, address, distance_km }) {
         return `
-        <div class="card">
+        <div class="card h-r">
             <img src="${imageUrl}" alt="">
             <div class="card-cont">
                 <div class="name">${name}</div>
                 <div class="address">${address}</div>
-                <div class="distance">${distance_km}</div>
+                <div class="distance">${distance_km}km</div>
             </div>
         </div>
         `;
+    }
+    function searchCard({ imageUrl, name, address, distance_km }) {
+        return `
+            <div class="search-card h-r">
+                <img src="${imageUrl}" alt="">
+                <div class="search-card-cont">
+                    <div class="name">${name}</div>
+                    <div class="address">${address}</div>
+                    <div class="distance">${distance_km}km</div>
+                </div>
+            </div>`
+        ;
     }
 
     function shuffleArray(array) {
@@ -33,10 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
             left.innerHTML = `<h1>No Result Found</h1>`;
         }
     }
-
+    
     function search(query, arr) {
         const results = arr.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
-        left.innerHTML = results.length > 0 ? results.map(addCard).join('') : `<h1>No Result Found</h1>`;
+        left.innerHTML = results.length > 0 ? results.map(searchCard).join('') : `<h1>No Result Found</h1>`;
     }
 
     document.querySelector('.hamburger').addEventListener('click', () => {
@@ -54,13 +66,17 @@ document.addEventListener('DOMContentLoaded', () => {
             left.innerHTML = `<h1>Error performing search</h1>`;
         }
     });
-
+    const searchInput = document.getElementById('s');
+    searchInput.addEventListener('keypress', async () =>{
+        try {
+            const response = await fetch('data.json');
+            const arr = await response.json();
+            search(searchInput.value, arr);
+        } catch (error) {
+            console.error('Error performing search:', error);
+            left.innerHTML = `<h1>Error performing search</h1>`;
+        }
+    });
     // Load cards on page load
     loadCards();
-});
-const ham = document.querySelector('.ham');
-const hamburger = document.querySelector('.hamburger');
-
-hamburger.addEventListener('click', () => {
-    ham.classList.toggle('hide');
 });

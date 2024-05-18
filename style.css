@@ -175,11 +175,14 @@ body {
     top: 60%;
 }
 
-.address {
+.address,.phone {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: rgb(170, 170, 170);
+}
+.rating{
+    color: yellow;
 }
 
 .name {

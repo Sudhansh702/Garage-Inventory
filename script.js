@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const left = document.querySelector(".left");
 
-    function addCard({ imageUrl, name, address, distance_km }) {
+    function addCard({ imageUrl, name, address, distance_km, phone, rating }) {
         return `
         <div class="card h-r ">
             <img src="${imageUrl}" alt="">
@@ -9,21 +9,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="name">${name}</div>
                 <div class="address">${address}</div>
                 <div class="distance">${distance_km}km</div>
-            </div>
-        </div>
-        `;
+                <div class="phone">${phone}</div>
+                <div class="rating">
+                    <div class="stars">
+                        ${Array(rating).fill('<i class="fa fa-star" aria-hidden="true"></i>').join('')}
+                        ${Array(5 - rating).fill('<i class="fa fa-star-o" aria-hidden="true"></i>').join('')}
+                    </div>
+                </div>
+                </div>
+                </div>
+                `;
     }
-    function searchCard({ imageUrl, name, address, distance_km }) {
+    function searchCard({ imageUrl, name, address, distance_km,phone,rating }) {
         return `
         <div class="search-card h-r ">
                     <img class=" rounded" src="${imageUrl}" alt="">
-                <div class="search-card-cont">
+                    <div class="search-card-cont">
                     <div class="name">${name}</div>
                     <div class="address">${address}</div>
                     <div class="distance">${distance_km}km</div>
+                    <div class="phone">${phone}</div>
+                    <div class="rating">
+                        <div class="stars">
+                            ${Array(rating).fill('<i class="fa fa-star" aria-hidden="true"></i>').join('')}
+                            ${Array(5 - rating).fill('<i class="fa fa-star-o" aria-hidden="true"></i>').join('')}
+                        </div>
+                    </div>
                 </div>
             </div>`
-        ;
+            ;
     }
 
     function shuffleArray(array) {
@@ -45,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             left.innerHTML = `<h1>No Result Found</h1>`;
         }
     }
-    
+
     function search(query, arr) {
         const results = arr.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
         left.innerHTML = results.length > 0 ? results.map(searchCard).join('') : `<h1>No Result Found</h1>`;
@@ -54,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.hamburger').addEventListener('click', () => {
         document.querySelector('.ham').classList.toggle('hide');
     });
-
+    
     document.querySelector('.searchBtn').addEventListener('click', async () => {
         const searchInput = document.getElementById('s').value;
         try {
@@ -67,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     const searchInput = document.getElementById('s');
-    searchInput.addEventListener('keypress', async () =>{
+    searchInput.addEventListener('keypress', async () => {
         try {
             const response = await fetch('data.json');
             const arr = await response.json();
